@@ -1,13 +1,18 @@
-import {Cube} from "../../../types";
-const ArrayObjectsForBoard = () => {
+import {Cube} from "../../types";
+const CreateItems = () => {
   const arrayCubes:Cube[] = [];
 
   for(let i = 0; i < 36; i++) {
-    arrayCubes.push({hasItem:false,clicked:false});
+    arrayCubes.push({
+        id: i,
+        hasItem:false,
+        clicked:false
+    });
   }
+
   const randomIndex = Math.round(Math.random() * 35);
   arrayCubes[randomIndex].hasItem = true;
 
   return arrayCubes;
 }
-export default ArrayObjectsForBoard;
+export default CreateItems;

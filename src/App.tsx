@@ -14,11 +14,11 @@ function App() {
     cubeCopy.clicked = true;
     cubesCopy[id] = cubeCopy;
     setCube(cubesCopy);
-  }
+  };
 
   const resetGame = () => {
     setCube(CreateItems());
-  }
+  };
 
   return (
     <>
@@ -36,7 +36,7 @@ function App() {
       </div>
       <button onClick={resetGame}>Reset</button>
     </>
-  )
+  );
 }
 
 export default App;
